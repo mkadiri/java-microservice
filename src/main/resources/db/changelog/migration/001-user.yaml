@@ -1,0 +1,38 @@
+databaseChangeLog:
+    - changeSet:
+        id: 001
+        author: mkadiri
+        changes:
+            - createTable:
+                tableName: user
+                columns:
+                    - column:
+                        name: id
+                        type: int
+                        autoIncrement: true
+                        constraints:
+                            primaryKey: true
+                            nullable: false
+                    - column:
+                        name: login
+                        type: varchar(255)
+                        constraints:
+                            unique: true
+                            uniqueConstraintName: user_login_UQ
+                            nullable: false
+                    - column:
+                        name: first_name
+                        type: varchar(255)
+                        constraints:
+                          nullable: false
+                    - column:
+                        name: last_name
+                        type: varchar(255)
+                        constraints:
+                          nullable: false
+                    - column:
+                        name: enabled
+                        type: boolean
+                        constraints:
+                            nullable: false
+                            defaultValueBoolean: false

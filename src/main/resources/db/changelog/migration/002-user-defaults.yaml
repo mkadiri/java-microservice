@@ -1,0 +1,50 @@
+databaseChangeLog:
+    - changeSet:
+        id: 002
+        author: mkadiri
+        changes:
+            - insert:
+                tableName: user
+                columns:
+                    - column:
+                        name: login
+                        value: mkadiri
+                    - column:
+                        name: first_name
+                        value: mohammed
+                    - column:
+                        name: last_name
+                        value: kadiri
+                    - column:
+                        name: enabled
+                        valueBoolean: true
+            - insert:
+                tableName: user
+                columns:
+                    - column:
+                        name: login
+                        value: jsmith
+                    - column:
+                        name: first_name
+                        value: john
+                    - column:
+                        name: last_name
+                        value: smith
+                    - column:
+                        name: enabled
+                        valueBoolean: true
+            - insert:
+                tableName: user
+                columns:
+                    - column:
+                        name: login
+                        value: obloom
+                    - column:
+                        name: first_name
+                        value: orlando
+                    - column:
+                        name: last_name
+                        value: bloom
+                    - column:
+                        name: enabled
+                        valueBoolean: true

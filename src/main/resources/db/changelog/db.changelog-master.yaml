@@ -1,0 +1,7 @@
+databaseChangeLog:
+    - include:
+        file: migration/001-user.yaml
+        relativeToChangelogFile: true
+    - include:
+        file: migration/002-user-defaults.yaml
+        relativeToChangelogFile: true
