@@ -28,7 +28,13 @@ In docker/java-8/startup.sh I've added a few java options to tweak with the JVM 
 
 ### Help
 
-- IntelliJ `Cannot resolve symbol` possible solutions:
-    - https://cleverbuilder.com/notes/intellij-cannot-resolve-symbol/
+#### IntelliJ 
+
+`Cannot resolve symbol`
+
+    - right click pom.xml -> Add as Maven project
+    - File -> project structure -> modules -> select 'src' -> mark as 'Source'
     - IntelliJ -> File -> Invalidate Caches / Restart
     - IntelliJ -> FIle -> Synchronize
+    
+`package name does not correspond to the file path`
