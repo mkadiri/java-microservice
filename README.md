@@ -1,6 +1,6 @@
 ## Running the application
 
-- You'll need to build the docker images by running `bash build.sh`. Two following two images will be created:
+- You'll need to build the docker images by running `bash build.sh`. Two images will be created:
     - `Java maven builder image`: this takes a pom.xml and source code and builds a jar file, it also caches files in to your local .m2 folder
     - `Java microservice app`: contains the jar file which is executed on startup
 - If all is successful you should be able to `docker-compose up`
@@ -36,5 +36,5 @@ In docker/java-8/startup.sh I've added a few java options to tweak with the JVM 
     - File -> project structure -> modules -> select 'src' -> mark as 'Source'
     - IntelliJ -> File -> Invalidate Caches / Restart
     - IntelliJ -> FIle -> Synchronize
-    
+
 `package name does not correspond to the file path`
