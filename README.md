@@ -36,3 +36,7 @@ In docker/java-8/startup.sh I've added a few java options to tweak with the JVM 
     - File -> project structure -> modules -> select 'src' -> mark as 'Source'
     - IntelliJ -> File -> Invalidate Caches / Restart
     - IntelliJ -> FIle -> Synchronize
+
+`package name does not correspond to the file path`
+    - file -> project structure
+    - src -> Mark as `sources`
